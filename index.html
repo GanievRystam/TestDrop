@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Drop</title>
+    <link rel="stylesheet" href="./fonts/stylesheet.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <form class="drop">
+                <label class="drop__head">Локация</label>
+                <div class="drop-input" data-event="collapsed">
+                    <img src="./img/Search.svg" class="drop-input__icon" />
+                    <span class="drop-input__head">ЖК, Округ, Район, Метро</span>
+                    <span class="drop-input__circle" data-circle>1</span>
+                </div>
+                <div class="drop-fill" data-state='true'>
+                    <ul class="drop-items">
+                        <li class="drop-items__item drop-items__item_active" data-switch="ЖК">ЖК</li>
+                        <li class="drop-items__item" data-switch="ОКРУГ">Округ</li>
+                        <li class="drop-items__item" data-switch="РАЙОН">Район</li>
+                        <li class="drop-items__item" data-switch="МЕТРО">Метро</li>
+                    </ul>
+                    <div class="selected" data-wrap="selected">
+                    </div>
+                    <div class="list-wrap">
+                        <ul class="drop__list" data-list="ЖК" data-open>
+                            <li class="list-item">
+                                <div class="list-item__head" data-name>
+                                    Басманный
+                                </div>
+                                <input type="checkbox" class="list-item__input" data-target="checked">
+                                <div class="list-item__wrond-chekbox" fakeCheked="false"></div>
+                            </li>
+                            <li class="list-item">
+                                <div class="list-item__head" data-name>
+                                    Замоскворечье
+                                </div>
+                                <input type="checkbox" class="list-item__input" data-target="checked">
+                                <div class="list-item__wrond-chekbox" fakeCheked="false"></div>
+                            </li>
+                            <li class="list-item">
+                                <div class="list-item__head" data-name>
+                                    Измайлово
+                                </div>
+                                <input type="checkbox" class="list-item__input" data-target="checked">
+                                <div class="list-item__wrond-chekbox" fakeCheked="false"></div>
+                            </li>
+                        </ul>
+                        <ul class="drop__list" data-list="ОКРУГ">
+                            <li class="list-item">
+                                <div class="list-item__head" data-name>
+                                    Московский
+                                </div>
+                                <input type="checkbox" class="list-item__input" data-target="checked">
+                                <div class="list-item__wrond-chekbox" fakeCheked="false"></div>
+                            </li>
+                            <li class="list-item">
+                                <div class="list-item__head" data-name>
+                                    Питерский
+                                </div>
+                                <input type="checkbox" class="list-item__input" data-target="checked">
+                                <div class="list-item__wrond-chekbox" fakeCheked="false"></div>
+                            </li>
+                            <li class="list-item">
+                                <div class="list-item__head" data-name>
+                                    Ещё какой-то
+                                </div>
+                                <input type="checkbox" class="list-item__input" data-target="checked">
+                                <div class="list-item__wrond-chekbox" fakeCheked="false"></div>
+                            </li>
+                            <li class="list-item">
+                                <div class="list-item__head" data-name>
+                                    Да не знаю я ещё какие
+                                </div>
+                                <input type="checkbox" class="list-item__input" data-target="checked">
+                                <div class="list-item__wrond-chekbox" fakeCheked="false"></div>
+                            </li>
+                            <li class="list-item">
+                                <div class="list-item__head" data-name>
+                                    Да не знаю я ещё какие
+                                </div>
+                                <input type="checkbox" class="list-item__input" data-target="checked">
+                                <div class="list-item__wrond-chekbox" fakeCheked="false"></div>
+                            </li>
+                            <li class="list-item">
+                                <div class="list-item__head" data-name>
+                                    Да не знаю я ещё какие
+                                </div>
+                                <input type="checkbox" class="list-item__input" data-target="checked">
+                                <div class="list-item__wrond-chekbox" fakeCheked="false"></div>
+                            </li>
+                        </ul>
+
+
+                        <ul class="drop__list" data-list="РАЙОН">
+                            <li class="list-item">
+                                <div class="list-item__head" data-name>
+                                    Басманный Район
+                                </div>
+                                <input type="checkbox" class="list-item__input" data-target="checked">
+                                <div class="list-item__wrond-chekbox" fakeCheked="false"></div>
+                            </li>
+                            <li class="list-item">
+                                <div class="list-item__head" data-name>
+                                    Замоскворечье Район
+                                </div>
+                                <input type="checkbox" class="list-item__input" data-target="checked">
+                                <div class="list-item__wrond-chekbox" fakeCheked="false"></div>
+                            </li>
+                            <li class="list-item">
+                                <div class="list-item__head" data-name>
+                                    Измайлово Район
+                                </div>
+                                <input type="checkbox" class="list-item__input" data-target="checked">
+                                <div class="list-item__wrond-chekbox" fakeCheked="false"></div>
+                            </li>
+                            <li class="list-item">
+                                <div class="list-item__head" data-name>
+                                    Люблино Район
+                                </div>
+                                <input type="checkbox" class="list-item__input" data-target="checked">
+                                <div class="list-item__wrond-chekbox" fakeCheked="false"></div>
+                            </li>
+                        </ul>
+
+
+                        <ul class="drop__list" data-list="МЕТРО">
+                            <li class="list-item">
+                                <div class="list-item__head" data-name>
+                                    Метро Басманный
+                                </div>
+                                <input type="checkbox" class="list-item__input" data-target="checked">
+                                <div class="list-item__wrond-chekbox" fakeCheked="false"></div>
+                            </li>
+                            <li class="list-item">
+                                <div class="list-item__head" data-name>
+                                    Метро Замоскворечье
+                                </div>
+                                <input type="checkbox" class="list-item__input" data-target="checked">
+                                <div class="list-item__wrond-chekbox" fakeCheked="false"></div>
+                            </li>
+                            <li class="list-item">
+                                <div class="list-item__head" data-name>
+                                    Метро Измайлово
+                                </div>
+                                <input type="checkbox" class="list-item__input" data-target="checked">
+                                <div class="list-item__wrond-chekbox" fakeCheked="false"></div>
+                            </li>
+                            <li class="list-item">
+                                <div class="list-item__head" data-name>
+                                    Метро Люблино
+                                </div>
+                                <input type="checkbox" class="list-item__input" data-target="checked">
+                                <div class="list-item__wrond-chekbox" fakeCheked="false"></div>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="cover"></div>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+<script src="./js/index.js"></script>
+
+</html>

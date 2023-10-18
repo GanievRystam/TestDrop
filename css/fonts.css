@@ -1,0 +1,7 @@
+@font-face { 
+    font-family: "WebFont";
+    src: url(WebFont.eot?) format("eot"), /* IE8+, знак ? позволяет обойти баг в обработчике значения src */
+         url(WebFont.woff) format("woff"), /* все современные браузеры, IE9+ */
+         url(WebFont.ttf) format("truetype"); /* все современные браузеры */
+}
+p {font-family: "WebFont", Arial, sans-serif; }
