@@ -68,7 +68,6 @@
 }
 .drop-fill[data-state='false'] {
     height: 0;
-    overflow: hidden;
     border: none;
 }
 .drop-fill {
@@ -83,6 +82,7 @@
     padding: 0 0px 0 16px;
     box-sizing: border-box;
     transition: height 500ms;
+    overflow: hidden;
 }
 
 .drop-items {
